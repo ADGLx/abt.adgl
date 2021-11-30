@@ -1,0 +1,87 @@
+:root{
+    --color1: rgba(35, 37, 40, 1); /*Raisin Black*/
+    --color2: rgba(34, 111, 84, 1); /*Bottle Green*/
+    --color3: rgba(255, 255, 255); /*White*/
+    --color4: rgba(211, 214, 217, 1);
+}
+
+
+body {
+    background-color: var(--color4) !important;
+}
+
+
+.button{
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.button1{
+    color: var(--color3); 
+    background-color: transparent;
+}
+
+.button1:hover {
+    color: var(--color2);
+    background-color: transparent;
+    padding: 25%;
+  }
+
+  .betaColor{
+    background-color: var(--color4);
+    border-radius: 2%;
+  }
+
+  .top-buffer{
+      margin-top: 20px;
+  }
+
+  .banner{
+      background-color: var(--color2);
+      height: 400PX;
+      color: var(--color3);
+  }
+
+  .footer{
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: var(--color2);
+      color: var(--color3);
+      text-align: right;
+  }
+
+  /*Keeps the days equal width */
+  th.day{
+      width: 14%;
+  }
+ /*Keeps the time smaller width */
+  th.time{
+      width: 2%;
+  }
+  .tableRowFormat {
+    height: 150px ;
+  }
+  .h td:hover,.h th:hover{
+      background-color: var(--color2) !important;
+     
+  }
+
+  /*Button override for boostrap*/
+  .buttonOverride:hover 
+  {
+    background-color: var(--color2) !important;
+  }
+
+
+
+
+
