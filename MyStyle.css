@@ -54,7 +54,7 @@ body {
       left: 0;
       bottom: 0;
       width: 100%;
-      background-color: var(--color2);
+      background-color: var(--color1);
       color: var(--color3);
       text-align: right;
   }
