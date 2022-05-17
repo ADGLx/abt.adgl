@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="MyStyle.css">
-   
+    <script src="https://kit.fontawesome.com/0eb434093d.js" crossorigin="anonymous"></script>
      <!--Favicon-->
      <link rel="icon" href ="img/creature.gif">
     <!--Boostrap-->
@@ -18,15 +18,15 @@
   <!--Header -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-    <img src="/img/creature.gif" width="35" height="35" >
-      <a class="navbar-brand" href="#">Personal Information</a>
+    <img src="/img/gras.gif" width="35" height="35" >
+      <a class="navbar-brand" href="#">About Me</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#about">About Me</a>
+            <a class="nav-link" aria-current="page" href="#about">My Interests</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#skills">Relevant Skills</a>
@@ -48,31 +48,54 @@
     <!--Body-->
     <div class="container-fluid">
         <!-- This keeps the cards separated and separates a bit the top-->
-        <div class="top-buffer d-grid gap-3">
+        <div class="top-buffer d-grid gap-2">
 
         <!--Big Banner-->
         <div class="banner d-flex align-items-center justify-content-center"> 
-            <h1> Hello, I'm Alvaro and this is my website!</h1>
+          <img src="img/gras.gif" class="img-thumbnail">
+            <h4> &nbsp; Hey! My name is Alvaro Gonzalez, I am a hardworking and passionate.</h4>
         </div>
 
-         <!--About Me Section-->
-         <div class="card border border-5" id="about">
-            <div class="row">
-              <div class="col-6 d-flex align-items-center justify-content-center card-header">
-                <h2 class="card-title">About Me</h2>
+        <!-- New System Everything -->
+        <div> 
+          <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">My Interests</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Relevant Skills</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Education</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="e-tab-pane" aria-selected="false">Work Experience</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="c-tab" data-bs-toggle="tab" data-bs-target="#c-tab-pane" type="button" role="tab" aria-controls="c-tab-pane" aria-selected="false">Contact Me</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+              <!--About Me Section-->
+              <div class="card border border-5" id="about">
+                  <div class="card-body row">
+                        <div class="col-sm"> <i class="fa-solid fa-code"></i>  <p class="card-text">Programming</p> </div>
+                        <div class="col-sm"> <i class="fa-solid fa-computer"></i> <p class="card-text">Computer Hardware</p> </div>
+                        <div class="col-sm"> <i class="fa-solid fa-baseball"></i> <p class="card-text">Tennis</p> </div>
+                  </div>
+              <div class="card-body row">
+                    <div class="col-sm"> <i class="fa-solid fa-ticket"></i> <p class="card-text">Films</p> </div>
+                    <div class="col-sm"> <i class="fa-solid fa-person-biking"></i>  <p class="card-text">Biking</p> </div>
+                    <div class="col-sm">  <i class="fa-solid fa-gamepad"></i> <p class="card-text">Videogames</p> </div>
               </div>
-
-              <div class="col-6">
-                <div class="card-body">
-                  <h5 class="card-title">Personal Interests</h5>
-                  <p class="card-text">Programming, technology, sciences and playing tennis.</p>
-                </div>
+  
               </div>
             </div>
-        </div>
-        
-            <!--Relevant Skills Section-->
-            <div class="card border border-5"id="skills">
+            
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              <!--Relevant Skills Section-->
+              <div class="card border border-5"id="skills">
                 <div class="row">
                   <div class="col-6">
                     <div class="card-body">
@@ -107,7 +130,35 @@
                     <h2 class="card-title">Relevant Skills</h2>
                   </div>
                 </div>
+                </div>
             </div>
+              
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+            
+            <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+            
+            <div class="tab-pane fade" id="c-tab-pane" role="tabpanel" aria-labelledby="c-tab" tabindex="0">Broski</div>
+          </div>
+          
+        </div>
+        
+         <!--About Me Section-->
+         <div class="card border border-5" id="about">
+            <div class="row">
+              <div class="col-6 d-flex align-items-center justify-content-center card-header">
+                <h2 class="card-title">My Interests</h2>
+              </div>
+
+              <div class="col-6">
+                <div class="card-body">
+                  <h5 class="card-title">Personal Interests</h5>
+                  <p class="card-text">Programming, technology, sciences and playing tennis.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+         
    
        <!--Education Section-->
        <div class="card border border-5"id="education">
