@@ -2,7 +2,8 @@
     --color1: rgba(35, 37, 40, 1); /*Raisin Black*/
     --color2: rgba(34, 111, 84, 1); /*Bottle Green*/
     --color3: rgba(255, 255, 255); /*White*/
-    --color4: rgba(211, 214, 217, 1);
+    /* --color4: rgba(211, 214, 217, 1); */
+    --color4: rgb(0, 0, 0);
 }
 
 
