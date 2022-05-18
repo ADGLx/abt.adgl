@@ -15,6 +15,12 @@ body {
 }
 
 
+.bodypanel{
+    background-image: url(/img/pattern1.svg)
+
+}
+
+
 .button{
     border: none;
     background-color: transparent;
